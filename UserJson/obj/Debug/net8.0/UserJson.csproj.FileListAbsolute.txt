@@ -1,0 +1,14 @@
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.AssemblyInfoInputs.cache
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.AssemblyInfo.cs
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.csproj.CoreCompileInputs.cache
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\bin\Debug\net8.0\UserJson.exe
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\bin\Debug\net8.0\UserJson.deps.json
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\bin\Debug\net8.0\UserJson.runtimeconfig.json
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\bin\Debug\net8.0\UserJson.dll
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\bin\Debug\net8.0\UserJson.pdb
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.dll
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\refint\UserJson.dll
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.pdb
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\UserJson.genruntimeconfig.cache
+C:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\obj\Debug\net8.0\ref\UserJson.dll
