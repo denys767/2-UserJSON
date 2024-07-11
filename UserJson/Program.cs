@@ -1,18 +1,18 @@
-﻿class Program {
+﻿using System.IO;
+class Program {
   static void Main() {
-    User NewUser = new User();
-    NewUser.UserGet();
-    string NewUserName = NewUser.UserName;
-    Console.WriteLine("Ваше имя " + NewUserName);
+    var user = new User();
+    user.SetUserData();
+    string username = user.UserName;
+
+    var userAge = new Age();
+    userAge.SetAge();
+    int newUserAge = userAge.UserNumber;
+    
+    var userMail = new Mail();
+    userMail.SetUserMail();
+    string usermail = userMail.UserMail;
+
+    
     }
   }
-
-// class User 
-// {
-//   public string Name = "DefaltName";
-//   public void UserGet() {
-//     Console.WriteLine("Введіть ім'я користувача");
-//     string Name = Convert.ToString(Console.ReadLine()); //При написанні числа замість строки буде помилка.
-//   }
-
-// }
