@@ -1,10 +1,11 @@
 ﻿using System.Text.Json;
+
 class Program
 {
   static void Main()
   {
     var user = new User();
-    user.SetUserData();
+    user.SetUserName();
     user.SetUserMail();
     user.SetAge();
 
@@ -14,6 +15,5 @@ class Program
     File.WriteAllText(filename, jsonUserInfo);
 
     Console.WriteLine($"Файл {filename} успешно создан/дополнен.");
-
   }
 }
