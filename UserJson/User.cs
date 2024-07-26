@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-using System.Linq;
 
 class User
 {
@@ -14,7 +13,8 @@ class User
     if (NameGet == "" || int.TryParse(NameGet, out _) || double.TryParse(NameGet, out _)) //"out _" - означає що отримане значення непотрібне. Tryparse виводить bool: "Чи є вміст MailString числом?"
     //Я без ідей, що треба зробити щоб кидалася помилка при дробу через крапку
     {
-      throw new ArgumentException("Нельзя ввести что-то кроме строки", nameof(NameGet));
+      Console.WriteLine("Повторите попытку.");
+      SetUserName();
     }
 
     else
@@ -32,18 +32,28 @@ class User
     Regex validateEmailRegex = new Regex("^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$");
     if (validateEmailRegex.IsMatch(MailValidate))
     {
-      Mail = MailValidate; 
+      Mail = MailValidate;
     }
     else
     {
-      throw new ArgumentException("Гой иди нах, введи адекватный E-mail");
+      Console.WriteLine("Повторите попытку.");
+      SetUserMail();
     }
   }
 
   public void SetAge()
   {
     Console.WriteLine("Введите возраст:");
-    Age = int.Parse(Console.ReadLine());
+    string AgeValidate = Console.ReadLine();
+    if (int.TryParse(AgeValidate, out _))
+    {
+      Age = int.Parse(AgeValidate);
+    }
+    else
+    {
+      Console.WriteLine("Повторите попытку.");
+      SetAge();
+    }
   }
 
 }

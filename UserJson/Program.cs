@@ -11,9 +11,9 @@ class Program
 
     var options = new JsonSerializerOptions { WriteIndented = true };
     string jsonUserInfo = JsonSerializer.Serialize(user, options);
-    string filename = "User.json";
-    File.WriteAllText(filename, jsonUserInfo);
+    string filePath = @"c:\Users\kdeni\Документы\Development\2-UserJSON\UserJson\user.json";
+    File.WriteAllText(filePath, jsonUserInfo);
 
-    Console.WriteLine($"Файл {filename} успешно создан/дополнен.");
+    Console.WriteLine("Файл успешно создан/дополнен.");
   }
 }
